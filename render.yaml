@@ -2,7 +2,7 @@ services:
 - type: web
   name: wordpress
   env: docker
-  plan: free
+  plan: starter
   autoDeploy: false
   disk:
     name: wordpress
