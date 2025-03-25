@@ -9,6 +9,11 @@ services:
     mountPath: /var/www/html
     sizeGB: 5
   envVars:
+  - key: WORDPRESS_CONFIG_EXTRA
+    value: |
+      upload_max_filesize = 64M;
+      post_max_size = 64M;
+  envVars:
   - key: WORDPRESS_DB_HOST
     fromService:
       name: mysql-wordpress
