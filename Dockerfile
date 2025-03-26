@@ -4,7 +4,7 @@ FROM wordpress:5.3.2-apache
 
 RUN apt-get update && apt-get install -y magic-wormhole
 
-COPY php.ini /usr/local/etc/php/config.d/custom.ini
+COPY ./php.ini /Users/marywaithera/wordpress/wordpress/Dockerfile
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
