@@ -46,9 +46,9 @@ services:
     sizeGB: 5
   envVars:
   - key: MYSQL_DATABASE
-    value: wp_db
+    value: mysql
   - key: MYSQL_USER
-    value: wp_user
+    value: mysql
   - key: MYSQL_PASSWORD
     generateValue: true
   - key: MYSQL_ROOT_PASSWORD
